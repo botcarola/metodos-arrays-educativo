@@ -1,0 +1,39 @@
+@import "./variables";
+
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 3rem;
+
+    h1{
+        font-weight: 900;
+        font-size: 3rem;
+        color: $font-color;
+        a{
+            color: $color-primary;
+            text-decoration: none;
+        }
+    }
+}
+
+@media screen and (max-width: 750px){
+    main h1{
+        font-size: 2rem;
+    }
+    
+}
+
+@media screen and (max-width: 500px){
+    main h1{
+        font-size: 1.5rem;
+    }
+    
+}
+
+@media screen and (max-width: 370px){
+    main h1{
+        font-size: 1.2rem;
+    }
+    
+}
