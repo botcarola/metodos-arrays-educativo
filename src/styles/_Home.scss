@@ -4,22 +4,39 @@ main{
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: 3rem;
+    margin-top: 3rem;    
 
     h1{
         font-weight: 900;
         font-size: 3rem;
         color: $font-color;
+        margin-bottom: 5rem;
         a{
             color: $color-primary;
             text-decoration: none;
         }
+    }
+
+    .contenedor-cards{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        width: 60%;
+    }
+
+    h1 a:hover{
+        
+        text-shadow: 4px 3px 0 $color-details-2;
     }
 }
 
 @media screen and (max-width: 750px){
     main h1{
         font-size: 2rem;
+    }
+
+    main .contenedor-cards{
+        width: 90%;
     }
     
 }

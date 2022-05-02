@@ -1,23 +1,31 @@
 @import "./variables";
 
 .card{
-    color: $font-color;
+    width: 6rem;
+    color: white;
     text-decoration: none;
-    border: 1px solid $color-details-2;
+    background-color: $color-primary;   
     padding: 0px 20px;
     border-radius: 10px;
-
+    margin: 0.2rem;
+    
     .card-title{
-    display: flex;
-    align-items: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
 
         h2{
+            font-size: 1.2rem;
+            font-weight: 300;
+        }
+
+        .icon-card{
             font-size: 2rem;
-            font-weight: 400;
         }
     }    
 }
 
 .card:hover{
-    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
 }
